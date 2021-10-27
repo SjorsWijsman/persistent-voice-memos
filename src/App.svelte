@@ -14,7 +14,7 @@
   // Get all items in store collecton
   async function getBlobs() {
     if ($db) {
-      blobs = await $db.getAllFromIndex($storeName, "id");
+      blobs = await $db.getAll($storeName);
     }
   }
 </script>
